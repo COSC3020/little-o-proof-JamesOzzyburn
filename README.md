@@ -17,3 +17,13 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+## Answer
+1. $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < cg(n)$ Definition of $(n)\in o(g(n))$
+
+2. $\forall c \Rightarrow \exists c$ Definition of $\forall c$
+
+3. $f(n) \in O(g(n)) \iff \exists c > 0, \exists n_0 \ge 0: \forall n \ge n_0, f(n) \le cg(n)$ Definition of $f(n)\in O(g(n))$
+
+Final Solution       
+$f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ by proof
