@@ -25,5 +25,7 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 3. $f(n) \in O(g(n)) \iff \exists c > 0, \exists n_0 \ge 0: \forall n \ge n_0, f(n) \le cg(n)$ Definition of $f(n)\in O(g(n))$
 
-Final Solution       
-$f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ by proof
+4. $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \Rightarrow \exists c>0, \exists n_0, \forall n\ge n_0:f(n) \le c g(n)$
+
+Further Elaboration \
+When we look at 4 we can see why $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$. There are two reasons for this the first being the changed $\forall c > 0$ in the little o definition to a $\exists c > 0$ in the big O definition. This makes sense as if there is a forall meaning it holds true for all then of course we can find one that is true. The seconds reason being the change from the $<$ in the litte o proof to the $\le$ in the big o. It has kinda the same resoning as the previous point being that of course something that is less than is also less then or equal to. $(f(n) < cg(n) \Rightarrow f(n) \le cg(n))$
